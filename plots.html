@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Let's Get Ready: Plots</title>
+    <title>Let's Get Ready: Free Responses</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
 
@@ -33,195 +33,72 @@
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
   </head>
+  
   <body class="d-flex h-100 text-center text-white bg-dark">
     
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto" style="margin-bottom:3rem!important">
-    <div>
-      <!-- <h3 class="float-md-start mb-0">LGR</h3> -->
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link active" href="plots.html">Plots</a>
-        <a class="nav-link" href="freeresponse.html">Free Response</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="px-3">
-    <!-- Intro paragraph -->
-    <h1 style="text-align: left;">Bar Plots</h1>
-    <p style="text-align: left; padding-top: 1rem;"></p>
-   
-
-
-    <h3 style="text-align: left; margin-top: 2rem;">Transition & Success Students</h3>
-    <hr style="width:100%;">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-5 col-md-6"><br> </br>Students relationship with Coaches    <br> </br>     
-          <div style="text-align: left; color: black; text-shadow: none; margin-top: 1rem;" id="observablehq-coach_relationship-a85042c7"></div></div>
-
-        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0"><br> </br> Coaches Recommendation from Students <br> </br>   
-           <div style="text-align: left; color: black; text-shadow: none; margin-top: 1rem;" id="observablehq-coach_recommendation-a85042c7"></div></div>
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto" style="margin-bottom:3rem!important">
+      <div>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="plots.html">Plots</a>
+          <a class="nav-link active" href="freeresponse.html">Free Response</a>
+        </nav>
       </div>
+    </header>
 
-      <div class="row">
-        <div class="col-sm-6 col-md-5 col-lg-6"><br> </br> Program Recommendation from Students <br> </br>  
-          <div style="text-align: left; color: black; text-shadow: none; margin-top: 1rem;" id="observablehq-program_recommendation-a85042c7"></div>
-      </div>
-
-        <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0"><br> </br> 
-          Almost all students, in both transition and success programs, felt they had a strong relationship with their coach, and would recommend their coaches. As the result of these positive experiences, most students (both from the success and transition groups) would recommend the program. </div>
-      </div>
-    </div>
-    
-
-     
+    <main class="px-3">
+      <!-- Intro paragraph -->
+      <h1 style="text-align: left;">Free Response Analysis</h1>
+      <p style="text-align: left; padding-top: 1rem;">Free text data from the LGR 2021 Survey was analyzed in order to extract themes/topics. Two analyses are presented below: word clouds and topic modeling. A summary of the analysis is at the bottom of the page.</p>
+      <p style="text-align: left;">Select which Program (Transition, Success), Group (Students, Coaches) and Question (Covid Impact, LGR Resources) you'd like to view using the toggle buttons. Word clouds and topics plots will automatically populate with the correct data.</p>
       
-    <h3 style="text-align: left; margin-top: 2rem;">Transition Students</h3>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-5 col-md-6"><br> </br>Students relationship with Coaches    <br> </br>  
-          <div style="text-align: left; color: black; text-shadow: none; margin-top: 1rem;" id="observablehq-college_decision-a85042c7"></div>  </div>
-
-        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0"><br> </br> Coaches Recommendation from Students <br> </br>  
-            <div style="text-align: left; color: black; text-shadow: none; margin-top: 1rem;" id="observablehq-college_readiness-a85042c7"></div></div>
-      </div>
+      <!-- Radio buttons -->
+      <div style="text-align: left;" id="radio1"></div>
+      <div style="text-align: left;" id="radio2"></div>
+      <div style="text-align: left;" id="radio3"></div>
       
-      <div class="row">
-        <div class="col-sm-6 col-md-5 col-lg-6"><br> </br> Program Recommendation from Students <br> </br>  
-          <div style="text-align: left; color: black; text-shadow: none; margin-top: 1rem;" id="observablehq-college_plans-a85042c7"></div></div>
-      </div>
+      <hr style="width:100%;">
 
-        <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0"><br> </br> 
-          <div style="text-align: left; color: black; text-shadow: none; margin-top: 1rem;" id="observablehq-graduation_confidence-a85042c7"></div> </div>
-      </div>
-    </div>
+      <!-- Word Cloud -->
+      <h3 style="text-align: left; margin-top: 2rem;">Word Cloud</h3>
+      <p style="text-align: left;">A word cloud visually displays the most frequently used words in free text data.</p>
+      <div style="text-align: left;" id="wordcloud"></div>
+
+      <hr style="width:100%;">
+
+      <!-- Topic Modeling -->
+      <h3 style="text-align: left; margin-top: 2rem;">Topic Modeling</h3>
+      <p style="text-align: left;">Latent Dirichlet Allocation (LDA) was used to extract "topics" from the free text responses. This technique assumes that each free response is a mixture of topics, and the presence of each word is attributed to a specific topic.</p>
+      <p style="text-align: left;">The most salient words are plotted below. To view the words associated with a specific "topic", select a button.</p>
+      <div style="text-align: left;" id="radio4"></div>
+      <div style="text-align: left; color: black; text-shadow: none; margin-top: 1rem;" id="topicbarplot"></div>
+    </main>
+
+    <footer class="mt-auto text-white-50">
+      <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+    </footer>
+  </div>
+
+  <script type="module">
+    // Load the Observable runtime and inspector.
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
     
-
-   
+    // Your notebook, compiled as an ES module.
+    import notebook from "https://api.observablehq.com/d/75c15a36dee66b5f.js?v=3";
     
-  
-          
-    <hr style="width:100%;">
-
-    <!-- Topic Modeling -->
-    <h3 style="text-align: left; margin-top: 2rem;">Corona Virus Impact on Students and Coaches</h3>
-    update somethingsdsfsdf
-    <div style="text-align: left; color: black; text-shadow: none; margin-top: 1rem;" id="observablehq-coronavirus_impact_students-a85042c7"></div>
-    <div style="text-align: left; color: black; text-shadow: none; margin-top: 1rem;" id="observablehq-coronavirus_impact_coaches-a85042c7"></div>
-
-
-  
-  </main>
-
-
-// Embedded JS 
-
-// coach relationship 
-        <div id="observablehq-coach_relationship-a85042c7"></div>
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
-        new Runtime().module(define, name => {
-          if (name === "coach_relationship") return new Inspector(document.querySelector("#observablehq-coach_relationship-a85042c7"));
-        });
-        </script>
-
-// coach recommendation
-        <div id="observablehq-coach_recommendation-a85042c7"></div>
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
-        new Runtime().module(define, name => {
-          if (name === "coach_recommendation") return new Inspector(document.querySelector("#observablehq-coach_recommendation-a85042c7"));
-        });
-        </script>
-
-
-// program recommendation 
-        <div id="observablehq-program_recommendation-a85042c7"></div>
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
-        new Runtime().module(define, name => {
-          if (name === "program_recommendation") return new Inspector(document.querySelector("#observablehq-program_recommendation-a85042c7"));
-        });
-        </script>
-
-
-// transition students college decision
-        <div id="observablehq-college_decision-a85042c7"></div>
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
-        new Runtime().module(define, name => {
-          if (name === "college_decision") return new Inspector(document.querySelector("#observablehq-college_decision-a85042c7"));
-        });
-        </script>
-
-// transition students college readiness
-        <div id="observablehq-college_readiness-a85042c7"></div>
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
-        new Runtime().module(define, name => {
-          if (name === "college_readiness") return new Inspector(document.querySelector("#observablehq-college_readiness-a85042c7"));
-        });
-        </script>
-
-
-//transition students college plan 
-        <div id="observablehq-college_plans-a85042c7"></div>
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
-        new Runtime().module(define, name => {
-          if (name === "college_plans") return new Inspector(document.querySelector("#observablehq-college_plans-a85042c7"));
-        });
-        </script>
-
-
-// transition students graduation confidence
-        <div id="observablehq-graduation_confidence-a85042c7"></div>
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
-        new Runtime().module(define, name => {
-          if (name === "graduation_confidence") return new Inspector(document.querySelector("#observablehq-graduation_confidence-a85042c7"));
-        });
-        </script>
-
-
-//coronavirus impact on students
-        <div id="observablehq-coronavirus_impact_students-a85042c7"></div>
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
-        new Runtime().module(define, name => {
-          if (name === "coronavirus_impact_students") return new Inspector(document.querySelector("#observablehq-coronavirus_impact_students-a85042c7"));
-        });
-        </script>
-
-
-////coronavirus impact on Coaches
-        <div id="observablehq-coronavirus_impact_coaches-a85042c7"></div>
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
-        new Runtime().module(define, name => {
-          if (name === "coronavirus_impact_coaches") return new Inspector(document.querySelector("#observablehq-coronavirus_impact_coaches-a85042c7"));
-        });
-        </script>
-
-
-  <footer class="mt-auto text-white-50">
-    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-  </footer>
-
+    // Load the notebook, observing its cells with a default Inspector
+    // that simply renders the value of each cell into the provided DOM node.
+    const main = new Runtime().module(notebook, name => {
+      if (name === "viewof program") return Inspector.into("#radio1")();
+      if (name === "viewof group") return  Inspector.into("#radio2")();
+      if (name === "viewof question") return  Inspector.into("#radio3")();
+      if (name === "wordcloud_image") return  Inspector.into("#wordcloud")();
+      if (name === "viewof topic") return  Inspector.into("#radio4")();
+      if (name === "topicModelling") return  Inspector.into("#topicbarplot")();
+    });
+  </script>
 
 
     
