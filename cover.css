@@ -22,10 +22,12 @@ body {
 }
 
 .cover-container {
-  max-width: 100em;
+  max-width: 50em;
 }
 
-
+.row-container {
+  max-width: 100em;
+}
 /*
  * Header
  */
