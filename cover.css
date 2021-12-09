@@ -25,6 +25,9 @@ body {
   max-width: 50em;
 }
 
+.container {
+  max-width: 100em;
+}
 
 /*
  * Header
