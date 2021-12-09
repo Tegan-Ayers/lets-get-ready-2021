@@ -49,12 +49,97 @@
   </header>
 
   <main class="px-3">
-    <!-- <h1>Let's Get Ready</h1>
-    <p class="lead">January 2021 Survey</p>
-    <p class="lead">
-      <a href="about.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-    </p> -->
+    <!-- Intro paragraph -->
+    <h1 style="text-align: left;">Bar Plots</h1>
+    <p style="text-align: left; padding-top: 1rem;"></p>
+   
+
+
+    <h3 style="text-align: left; margin-top: 2rem;">Transition & Success Students</h3>
+    <table class="table table-hover">
+      <tbody>
+        <tr>
+          <td> <div style="text-align: left; color: black; text-shadow: none; margin-top: 1rem;" id="observablehq-coach_relationship_grouped-ca586f60"></div></td>
+          <td> <div style="text-align: left; color: black; text-shadow: none; margin-top: 1rem;" id="observablehq-coach_recommendation_grouped-ca586f60"></div></td>
+          <td> <div style="text-align: left; color: black; text-shadow: none; margin-top: 1rem;" id="observablehq-program_recommendation_grouped-ca586f60"></div> </td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>Jacob</td>
+
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <hr style="width:100%;">
+
+
+
+          
+    <hr style="width:100%;">
+
+    <!-- Topic Modeling -->
+    <h3 style="text-align: left; margin-top: 2rem;">Transtion & Success Coaches</h3>
+    <p style="text-align: left;">Placeholder 2</p>
+
+
   </main>
+
+  
+// graduation confidence
+  <div id="observablehq-graduation_confidence_plot-296caae6"></div>
+<p>Credit: <a href="https://observablehq.com/@trantbpham/lets-get-ready-eda">Let&#039;s Get Ready EDA by Tran Pham</a></p>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda@1318.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "graduation_confidence_plot") return new Inspector(document.querySelector("#observablehq-graduation_confidence_plot-296caae6"));
+});
+</script>
+
+// coach relationship grouped
+
+<div id="observablehq-coach_relationship_grouped-ca586f60"></div>
+<p>Credit: <a href="https://observablehq.com/@trantbpham/lets-get-ready-eda">Let&#039;s Get Ready EDA by Tran Pham</a></p>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "coach_relationship_grouped") return new Inspector(document.querySelector("#observablehq-coach_relationship_grouped-ca586f60"));
+});
+</script>
+
+// coach recommendation grouped
+<div id="observablehq-coach_recommendation_grouped-ca586f60"></div>
+<p>Credit: <a href="https://observablehq.com/@trantbpham/lets-get-ready-eda">Let&#039;s Get Ready EDA by Tran Pham</a></p>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "coach_recommendation_grouped") return new Inspector(document.querySelector("#observablehq-coach_recommendation_grouped-ca586f60"));
+});
+</script>
+
+
+// program recommendation grouped
+<div id="observablehq-program_recommendation_grouped-ca586f60"></div>
+<p>Credit: <a href="https://observablehq.com/@trantbpham/lets-get-ready-eda">Let&#039;s Get Ready EDA by Tran Pham</a></p>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "program_recommendation_grouped") return new Inspector(document.querySelector("#observablehq-program_recommendation_grouped-ca586f60"));
+});
+</script>
 
   <footer class="mt-auto text-white-50">
     <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
