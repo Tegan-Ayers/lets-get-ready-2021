@@ -66,7 +66,7 @@
           <div id="coach_recommendation"></div>
       </div>
 
-        <div class="col-md-6"><div id="program_recommendation"></div></div>
+        <div class="col-md-6"><br></br><div id="program_recommendation"></div></div>
         <div class="col-md-6">
           </div>
       </div>
@@ -74,51 +74,49 @@
 
     <br></br>
 
-       <!-- Intro paragraph -->
-       <h1 style="text-align: left;">Transition Students' Progress</h1>
-       <p style="text-align: left; padding-top: 1rem;">Text placeholder 3</p>
-       <p style="text-align: left;"></p>
-       
-       <hr style="width:100%;">
-   
-    <div class="container">
+    <div class="row text-white">
+      <h1>Transition Students' Progress</h1>
+        <p>Text placeholder 3</p>
+    
+    </div>
+
+
+
       <div class="row">
-        <div class="col">
-          <div style="text-align: left;" id="college_decision"></div>
+        <div class="col-md-6">
+          <div id="college_decision"></div>
         </div>
-        <div class="col">
-          <div style="text-align: left;" id="observablehq-college_readiness-a85042c7"></div>
+
+        <div class="col-md-6">
+          <div id="college_readiness"></div>
         </div>
 
         <div class="w-100"></div>
 
-        <div class="col"><br></br> 
-          <div style="text-align: left;" id="observablehq-college_plans-a85042c7"></div> 
+        <div class="col-md-6"><br></br> 
+          <div id="college_plans"></div> 
         </div>
-        <div class="col"><br></br> 
-          <div style="text-align: left;" id="observablehq-graduation_confidence-a85042c7"></div>
+        <div class="col-md-6"><br></br> 
+          <div id="graduation_confidence"></div>
         </div>
       </div>
-    </div>
 
     <br></br>
 
-       <!-- Intro paragraph -->
-       <h1 style="text-align: left;">Corona Virus Impacts on Students and Coaches</h1>
-          <p style="text-align: left;">Interestingly, success students rated coronavirus as having a larger impact on their college plans/experience than Transition students. This is likely because success students, most of whom were already enrolled in college, likely had to return home. Transition students, who are still in high school, were still living at home at the time so were less impacted.</p>
-          <p style="text-align: left;">Interestingly, when Transition coaches were asked about the impact of coronavirus on their students, coaches tended to rate the impact higher as shown by the distribution centered around "A lot".</p>
-       
-       <hr style="width:100%;">
+    <div class="row text-white">
+      <h1>Corona Virus Impacts on Students and Coaches</h1>
+         <p>Interestingly, success students rated coronavirus as having a larger impact on their college plans/experience than Transition students. This is likely because success students, most of whom were already enrolled in college, likely had to return home. Transition students, who are still in high school, were still living at home at the time so were less impacted.</p>
+         <p>Interestingly, when Transition coaches were asked about the impact of coronavirus on their students, coaches tended to rate the impact higher as shown by the distribution centered around "A lot".</p>
+      
+   </div>
    
-    <div class="container">
       <div class="row">
-        <div class="col">  1  <div style="text-align: left;" id="observablehq-coronavirus_impact_students-a85042c7"></div></div>
-        <div class="col">2 <div style="text-align: left;" id="observablehq-coronavirus_impact_coaches-a85042c7"></div></div>
+        <div class="col-md-6">  1  <div id="coronavirus_impact_students"></div></div>
+        <div class="col-md-6">2 <div id="coronavirus_impact_coaches"></div></div>
         <br></br>
         <br></br>
  
       </div>
-    </div>
 
   </main>
 
@@ -136,6 +134,11 @@
      if (name === "coach_recommendation") return new Inspector(document.querySelector("#coach_recommendation"));
      if (name === "program_recommendation") return new Inspector(document.querySelector("#program_recommendation"));
      if (name === "college_decision") return new Inspector(document.querySelector("#college_decision"));
+     if (name === "college_readiness") return new Inspector(document.querySelector("#college_readiness"));
+     if (name === "college_plans") return new Inspector(document.querySelector("#college_plans"));
+     if (name === "graduation_confidence") return new Inspector(document.querySelector("#graduation_confidence"));
+     if (name === "coronavirus_impact_coaches") return new Inspector(document.querySelector("#coronavirus_impact_coaches"));
+     if (name === "coronavirus_impact_students") return new Inspector(document.querySelector("#coronavirus_impact_students"));
     });
     </script>
 
