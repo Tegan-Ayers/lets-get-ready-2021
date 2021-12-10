@@ -61,7 +61,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div style="text-align: left;" id="coach_relationship"></div></div>
+          <div id="coach_relationship"></div>
 
         <div class="col"><div style="text-align: left;" id="coach_recommendation"></div></div>
 
@@ -129,7 +129,16 @@
   </footer>
 
 
-
+  <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
+    new Runtime().module(define, name => {
+     if (name === "coach_relationship") return new Inspector(document.querySelector("#coach_relationship"));
+     if (name === "coach_recommendation") return new Inspector(document.querySelector("#coach_recommendation"));
+     if (name === "program_recommendation") return new Inspector(document.querySelector("#program_recommendation"));
+     if (name === "college_decision") return new Inspector(document.querySelector("#college_decision"));
+    });
+    </script>
 
     
   </body>
@@ -138,16 +147,7 @@
   <!-- // Embedded JS 
 
 // coach relationship  -->
-<script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
-new Runtime().module(define, name => {
- if (name === "coach_relationship") return new Inspector(document.querySelector("#coach_relationship"));
- if (name === "coach_recommendation") return new Inspector(document.querySelector("#coach_recommendation"));
- if (name === "program_recommendation") return new Inspector(document.querySelector("#program_recommendation"));
- if (name === "college_decision") return new Inspector(document.querySelector("#college_decision"));
-});
-</script>
+
 
 
 
