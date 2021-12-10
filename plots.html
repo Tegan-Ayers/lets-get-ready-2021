@@ -61,13 +61,13 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div style="text-align: left;" id="observablehq-coach_relationship-a85042c7"></div></div>
+          <div style="text-align: left;" id="coach_relationship"></div></div>
 
-        <div class="col"><div style="text-align: left;" id="observablehq-coach_recommendation-a85042c7"></div></div>
+        <div class="col"><div style="text-align: left;" id="coach_recommendation"></div></div>
 
         <div class="w-100"></div>
 
-        <div class="col"><br></br> <div style="text-align: left;" id="observablehq-program_recommendation-a85042c7"></div></div>
+        <div class="col"><br></br> <div style="text-align: left;" id="program_recommendation"></div></div>
         <div class="col"> <br></br> 
           <p style="text-align: left;"></p></div>
       </div>
@@ -85,7 +85,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div style="text-align: left;" id="observablehq-college_decision-a85042c7"></div>
+          <div style="text-align: left;" id="college_decision"></div>
         </div>
         <div class="col">
           <div style="text-align: left;" id="observablehq-college_readiness-a85042c7"></div>
@@ -138,14 +138,23 @@
   <!-- // Embedded JS 
 
 // coach relationship  -->
-        <div id="observablehq-coach_relationship-a85042c7"></div>
-        <script type="module">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
+new Runtime().module(define, name => {
+ if (name === "coach_relationship") return new Inspector(document.querySelector("#coach_relationship"));
+ if (name === "coach_recommendation") return new Inspector(document.querySelector("#coach_recommendation"));
+ if (name === "program_recommendation") return new Inspector(document.querySelector("#program_recommendation"));
+ if (name === "college_decision") return new Inspector(document.querySelector("#college_decision"));
+});
+</script>
+
         import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
         import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
         new Runtime().module(define, name => {
           if (name === "coach_relationship") return new Inspector(document.querySelector("#observablehq-coach_relationship-a85042c7"));
         });
-        </script>
+
 
 <!-- // coach recommendation -->
         <div id="observablehq-coach_recommendation-a85042c7"></div>
