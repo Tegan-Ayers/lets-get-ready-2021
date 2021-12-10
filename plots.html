@@ -33,9 +33,9 @@
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
+  <body class="bg-dark">
     
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+<div class="cover-container">
   <header class="mb-auto" style="margin-bottom:3rem!important">
     <div>
       <!-- <h3 class="float-md-start mb-0">LGR</h3> -->
@@ -49,27 +49,26 @@
   </header>
 
 
-  <main class="px-3">
+  <main class="container">
     <!-- Intro paragraph -->
-    <h1 style="text-align: left;">Bar Plots</h1>
-    <p style="text-align: left; padding-top: 1rem;">Almost all students, in both transition and success programs, felt they had a strong relationship with their coach, as well as recommending their coaches. As a result of these positive experiences, most of students recommend the program.</p>
-    <p style="text-align: left;"></p>
+    <div class="row text-white">
+      <h1 style="text-align: left;">Bar Plots</h1>
+        <p style="text-align: left; padding-top: 1rem;">Almost all students, in both transition and success programs, felt they had a strong relationship with their coach, as well as recommending their coaches. As a result of these positive experiences, most of students recommend the program.</p>
+        <p style="text-align: left;"></p>
     
-    <hr style="width:100%;">
 
-
-    <div class="container">
       <div class="row">
-        <div class="col">
-          <div style="text-align: left;" id="coach_relationship"></div></div>
+        <div class="col-md-6">
+          <div id="coach_relationship"></div>
+        </div>
 
-        <div class="col"><div style="text-align: left;" id="coach_recommendation"></div></div>
+        <div class="col-md-6">
+          <div id="coach_recommendation"></div>
+      </div>
 
-        <div class="w-100"></div>
-
-        <div class="col"><br></br> <div style="text-align: left;" id="program_recommendation"></div></div>
-        <div class="col"> <br></br> 
-          <p style="text-align: left;"></p></div>
+        <div class="col-md-6"><div id="program_recommendation"></div></div>
+        <div class="col-md-6">
+          </div>
       </div>
     </div>
 
