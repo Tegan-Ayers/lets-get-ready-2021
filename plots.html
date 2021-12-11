@@ -35,7 +35,7 @@
   </head>
 
     
-<div class="cover-container">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto" style="margin-bottom:3rem!important">
     <div>
       <!-- <h3 class="float-md-start mb-0">LGR</h3> -->
@@ -49,94 +49,100 @@
   </header>
 
   <body class="bg-dark">
-    <main class="container">
+    <main class="container"">
     <!-- Intro paragraph -->
     <div class="row text-white">
-      <h1>Bar Plots</h1>
-        <p>Almost all students, in both transition and success programs, felt they had a strong relationship with their coach, as well as recommending their coaches. Transition students have a more even mix between "Strongly Agree" and "Agree" to recommend their coach. As a result of these positive experiences, most of students recommend the program.</p>
-    
+      <h3>Descriptive Plots</h3>
+      <p>Most survey questions assessed to what degree students' and coaches' agreed  with a statement. For each plot below, the question statement is shown in the top left corner of the plot. The frequency of each response ("Strongly Agree", "Agree", "Disagree", "Strongly Disagree") is plotted using bar graphs. You may hover over a bar to view the absolute value of the bar.</p>
+    </div>  
+      
+    <hr style="width:110%; border-top: 2px dotted gray; background-color:transparent!important; margin: 1.5em 0 1.5em 0;">
+
+    <div class="row text-white">
+      <h3>Coach and Program Satisfaction</h3>
+      <p>Almost all students, in both transition and success programs, felt they had a strong relationship with their coach. Furthermore, most students also stated that they were likely to recommend their coach to other LGR students.</p>
     </div>
 
       <div class="row">
         <div class="col-md-6">
-          <div id="coach_relationship"></div>
+          <div id="coach_relationship" style="text-shadow: none;"></div>
         </div>
 
         <div class="col-md-6">
-          <div id="coach_recommendation"></div>
-      </div>
+          <div id="coach_recommendation" style="text-shadow: none;"></div>
+        </div>
 
-        <div class="col-md-6"><br></br><div id="program_recommendation"></div></div>
+        <p style="color: white; margin: 1em 0 1em 0;">Perhaps as a result of having such a positive relationship with their coaches, students are also very likely to recommend the LGR program.</p>
+
         <div class="col-md-6">
-          </div>
+          <div id="program_recommendation" style="text-shadow: none;"></div>
+        </div>
+          <div class="col-md-6">
+        </div>
       </div>
 
-    <br></br>
+    <br>
+
+    <hr style="width:100%; border-top: 2px dotted gray; background-color:transparent!important; margin: 1.5em 0 1.5em 0;">
+
 
     <div class="row text-white">
-      <h1>Transition Students' Progress</h1>
-        <p>Most transition students have made their decision on colleges. There is an even mixed between transition students feeling ready for college and then the others are somewhat ready. 
-          This can indicate that students are still not fully ready for college and there are still some factors that are holding them back. </p>
-          
-        <p>Majority of students plan to attend college this upcoming fall semester, and almost all students are confidence that they will graduate. </p>
-
+      <h3>Transition Students' College Plans</h3>
+      <p>Most Transition Students have decided to go to college immediately following high school graduation. Additionally, most students agree that college is the right decision for them. </p> 
     </div>
-
 
 
       <div class="row">
         <div class="col-md-6">
-          <div id="college_decision"></div>
+          <div id="college_plans" style="text-shadow: none;"></div> 
         </div>
 
         <div class="col-md-6">
-          <div id="college_readiness"></div>
+          <div id="college_decision" style="text-shadow: none;"></div>
         </div>
 
-        <div class="w-100"></div>
+        <p style="color: white; margin: 1em 0 1em 0;">Most students rated their readiness for college as "Somewhat Agree". This may be due to normal pre-college jitters, or perhaps this feeling of uncertainty is exacerbated by COVID-19. If data from previous years is available, it may be worthwhile to compare students from this cohort to previous years.</p>
 
-        <div class="col-md-6"><br></br> 
-          <div id="college_plans"></div> 
+        <div class="col-md-6">
+          <div id="college_readiness" style="text-shadow: none;"></div>
         </div>
-        <div class="col-md-6"><br></br> 
-          <div id="graduation_confidence"></div>
+        <div class="col-md-6">
+          <div id="graduation_confidence" style="text-shadow: none;"></div>
         </div>
       </div>
 
-    <br></br>
+    <br>
+
+    <hr style="width:100%; border-top: 2px dotted gray; background-color:transparent!important; margin: 1.5em 0 1.5em 0;">
+
 
     <div class="row text-white">
-      <h1>Corona Virus Impacts on Students and Coaches</h1>
+      <h3>Impact of Coronavirus</h3>
          <p>Interestingly, success students rated coronavirus as having a larger impact on their college plans/experience than Transition students. This is likely because success students, most of whom were already enrolled in college, likely had to return home. Transition students, who are still in high school, were still living at home at the time so were less impacted.</p>
          <p>Interestingly, when Transition coaches were asked about the impact of coronavirus on their students, coaches tended to rate the impact higher as shown by the distribution centered around "A lot".</p>
       
-   </div>
-   
-
-   <div class="row">
-    <div class="col-md-6">
-      <div id="coronavirus_impact_coaches"></div>
     </div>
+   
+    <div class="row">
+      <div class="col-md-6">
+        <div id="coronavirus_impact_coaches" style="text-shadow: none;"></div>
+      </div>
 
-    <div class="col-md-6">
-      <div id="coronavirus_impact_students"></div>
-  </div>
-
-  </div>
+      <div class="col-md-6">
+        <div id="coronavirus_impact_students" style="text-shadow: none;"></div>
+      </div>
+    </div>
 
 
 <br></br>
   </main>
 
 
-  <footer class="mt-auto text-white-50">
-    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-  </footer>
-
 
   <script type="module">
     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-    import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
+    // import define from "https://api.observablehq.com/@trantbpham/lets-get-ready-eda.js?v=3";
+    import define from "https://api.observablehq.com/@tegan-ayers/lets-get-ready-eda.js?v=3";
     new Runtime().module(define, name => {
      if (name === "coach_relationship") return new Inspector(document.querySelector("#coach_relationship"));
      if (name === "coach_recommendation") return new Inspector(document.querySelector("#coach_recommendation"));

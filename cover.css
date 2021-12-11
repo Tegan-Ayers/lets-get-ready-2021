@@ -22,7 +22,11 @@ body {
 }
 
 .cover-container {
-  max-width: 200em;
+  max-width: 70em;
+}
+
+.cover-container-modified {
+  max-width: 60em;
 }
 
 .row-container {
@@ -53,3 +57,23 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+
+/* style the table */
+table {
+  border-collapse: collapse;
+  width: 40%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+/* Align text left and make border */
+td, th {
+  border: 0.5px solid #fff;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Make every other row grey */
+/* tr:nth-child(even) {
+  background-color: #101010;
+} */

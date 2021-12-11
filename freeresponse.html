@@ -36,7 +36,7 @@
   
   <body class="d-flex h-100 text-center text-white bg-dark">
     
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <div class="cover-container-modified d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto" style="margin-bottom:3rem!important">
       <div>
         <nav class="nav nav-masthead justify-content-center float-md-end">
@@ -50,7 +50,7 @@
 
     <main class="px-3">
       <!-- Intro paragraph -->
-      <h1 style="text-align: left;">Free Response Analysis</h1>
+      <h3 style="text-align: left;">Free Response Analysis</h3>
       <p style="text-align: left; padding-top: 1rem;">Free text data from the LGR 2021 Survey was analyzed in order to extract themes/topics. Two analyses are presented below: word clouds and topic modeling. A summary of the analysis is at the bottom of the page.</p>
       <p style="text-align: left;">Select which Program (Transition, Success), Group (Students, Coaches) and Question (Covid Impact, LGR Resources) you'd like to view using the toggle buttons. Word clouds and topics plots will automatically populate with the correct data.</p>
       
@@ -59,14 +59,14 @@
       <div style="text-align: left;" id="radio2"></div>
       <div style="text-align: left;" id="radio3"></div>
       
-      <hr style="width:100%;">
+      <hr style="width:110%; border-top: 2px dotted gray; background-color:transparent!important; margin: 2em 0 2em 0;">
 
       <!-- Word Cloud -->
       <h3 style="text-align: left; margin-top: 2rem;">Word Cloud</h3>
       <p style="text-align: left;">A word cloud visually displays the most frequently used words in free text data.</p>
       <div style="text-align: left;" id="wordcloud"></div>
 
-      <hr style="width:100%;">
+      <hr style="width:110%; border-top: 2px dotted gray; background-color:transparent!important; margin: 2em 0 2em 0;">
 
       <!-- Topic Modeling -->
       <h3 style="text-align: left; margin-top: 2rem;">Topic Modeling</h3>
@@ -74,11 +74,10 @@
       <p style="text-align: left;">The most salient words are plotted below. To view the words associated with a specific "topic", select a button.</p>
       <div style="text-align: left;" id="radio4"></div>
       <div style="text-align: left; color: black; text-shadow: none; margin-top: 1rem;" id="topicbarplot"></div>
+
+      <br><br>
     </main>
 
-    <footer class="mt-auto text-white-50">
-      <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-    </footer>
   </div>
 
   <script type="module">
