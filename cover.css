@@ -70,10 +70,20 @@ table {
 td, th {
   border: 0.5px solid #fff;
   text-align: left;
-  padding: 8px;
+  padding: 4px;
 }
 
-/* Make every other row grey */
-/* tr:nth-child(even) {
-  background-color: #101010;
-} */
+.quote {
+  max-width: 90%;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background: #404040;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
+}

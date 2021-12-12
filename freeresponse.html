@@ -34,7 +34,7 @@
     <link href="cover.css" rel="stylesheet">
   </head>
   
-  <body class="d-flex h-100 text-center text-white bg-dark">
+  <body class="d-flex h-100 text-left text-white bg-dark">
     
   <div class="cover-container-modified d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto" style="margin-bottom:3rem!important">
@@ -44,36 +44,46 @@
           <a class="nav-link" href="about.html">About</a>
           <a class="nav-link" href="plots.html">Plots</a>
           <a class="nav-link active" href="freeresponse.html">Free Response</a>
+          <a class="nav-link" href="summary.html">Summary</a>
         </nav>
       </div>
     </header>
 
     <main class="px-3">
       <!-- Intro paragraph -->
-      <h3 style="text-align: left;">Free Response Analysis</h3>
-      <p style="text-align: left; padding-top: 1rem;">Free text data from the LGR 2021 Survey was analyzed in order to extract themes/topics. Two analyses are presented below: word clouds and topic modeling. A summary of the analysis is at the bottom of the page.</p>
-      <p style="text-align: left;">Select which Program (Transition, Success), Group (Students, Coaches) and Question (Covid Impact, LGR Resources) you'd like to view using the toggle buttons. Word clouds and topics plots will automatically populate with the correct data.</p>
+      <h3>Free Response Analysis</h3>
+      <p style="padding-top: 1rem;">The survey include two free response questions:</p>
+      <ol>
+        <li>Please tell us any concerns you have about college as a result of the coronavirus.</li>
+        <li>What was the most helpful area of support or advice you received from your coach and/or LGR?</li>
+      </ol>
+      <p>Responses to each of these questions was analyzed in order to extract themes/topics. Two analyses are presented below: word clouds and topic modeling. A summary of the analysis is at the bottom of the page.</p>
+      
+      <hr style="width:110%; border-top: 2px dotted gray; background-color:transparent!important; margin: 2em 0 2em 0;">
+      
+      <p>Select which Program (Transition, Success), Group (Students, Coaches) and Question (Covid Impact, LGR Resources) you'd like to view using the toggle buttons. Word clouds and topics plots will automatically populate with the correct data.</p>
       
       <!-- Radio buttons -->
-      <div style="text-align: left;" id="radio1"></div>
-      <div style="text-align: left;" id="radio2"></div>
-      <div style="text-align: left;" id="radio3"></div>
+      <div id="radio1"></div>
+      <div id="radio2"></div>
+      <div id="radio3"></div>
       
-      <hr style="width:110%; border-top: 2px dotted gray; background-color:transparent!important; margin: 2em 0 2em 0;">
+      <hr style="width:110%; border-top: 2px dotted gray; background-color:transparent!important; margin: 2em 0 1.5em 0;">
 
       <!-- Word Cloud -->
-      <h3 style="text-align: left; margin-top: 2rem;">Word Cloud</h3>
-      <p style="text-align: left;">A word cloud visually displays the most frequently used words in free text data.</p>
-      <div style="text-align: left;" id="wordcloud"></div>
+      <h3 style="margin-top: 1.5rem;">Word Cloud</h3>
+      <p>A word cloud visually displays the most frequently used words in free text data.</p>
+      <div id="wordcloud"></div>
 
-      <hr style="width:110%; border-top: 2px dotted gray; background-color:transparent!important; margin: 2em 0 2em 0;">
+      <hr style="width:110%; border-top: 2px dotted gray; background-color:transparent!important; margin: 2em 0 1.5em 0;">
 
       <!-- Topic Modeling -->
-      <h3 style="text-align: left; margin-top: 2rem;">Topic Modeling</h3>
-      <p style="text-align: left;">Latent Dirichlet Allocation (LDA) was used to extract "topics" from the free text responses. This technique assumes that each free response is a mixture of topics, and the presence of each word is attributed to a specific topic.</p>
-      <p style="text-align: left;">The most salient words are plotted below. To view the words associated with a specific "topic", select a button.</p>
-      <div style="text-align: left;" id="radio4"></div>
-      <div style="text-align: left; color: black; text-shadow: none; margin-top: 1rem;" id="topicbarplot"></div>
+      <h3 style=" margin-top: 1.5rem;">Topic Modeling</h3>
+      <p>Latent Dirichlet Allocation (LDA) was used to extract "topics" from the free text responses. This technique assumes that each free response is a mixture of topics, and the presence of each word is attributed to a specific topic.</p>
+      <p>The most salient words are plotted below. To view the words associated with a specific "topic", select a button.</p>
+      <div id="radio4"></div>
+      <div style="color: black; text-shadow: none; margin-top: 1rem;" id="topicbarplot"></div>
+
 
       <br><br>
     </main>
