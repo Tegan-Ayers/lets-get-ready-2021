@@ -57,7 +57,7 @@
         <li>Please tell us any concerns you have about college as a result of the coronavirus.</li>
         <li>What was the most helpful area of support or advice you received from your coach and/or LGR?</li>
       </ol>
-      <p>Responses to each of these questions was analyzed in order to extract themes/topics. Two analyses are presented below: word clouds and topic modeling. A summary of the analysis is at the bottom of the page.</p>
+      <p>Responses to each of these questions were analyzed in order to extract themes/topics. Two analyses are presented below: word clouds and topic modeling.</p>
       
       <hr style="width:110%; border-top: 2px dotted gray; background-color:transparent!important; margin: 2em 0 2em 0;">
       
@@ -73,16 +73,32 @@
       <!-- Word Cloud -->
       <h3 style="margin-top: 1.5rem;">Word Cloud</h3>
       <p>A word cloud visually displays the most frequently used words in free text data.</p>
+      
       <div id="wordcloud"></div>
+      
+      <h5 style="padding-top: 1em;">Example</h5>
+      <p>Select "Transition", "Students" and "LGR_Resources" using the buttons above. Upon doing so, all free responses from Transition Students who answered the question 
+        "What was the most helpful area of support or advice you received from your coach and/or LGR?" is aggregated and the most frequently used words are displayed in the word cloud. 
+        The size of word indicates how often the word is used. For example, larger words, such as "college essay", "scholarship", "advice" and "application" were used most often.</p>
 
       <hr style="width:110%; border-top: 2px dotted gray; background-color:transparent!important; margin: 2em 0 1.5em 0;">
 
       <!-- Topic Modeling -->
       <h3 style=" margin-top: 1.5rem;">Topic Modeling</h3>
-      <p>Latent Dirichlet Allocation (LDA) was used to extract "topics" from the free text responses. This technique assumes that each free response is a mixture of topics, and the presence of each word is attributed to a specific topic.</p>
-      <p>The most salient words are plotted below. To view the words associated with a specific "topic", select a button.</p>
+      <p>Latent Dirichlet Allocation (LDA) is a natural language processing technique used to extract "topics" from free text responses. The goal of LDA is to group all the 
+        words from the free responses into "topics". The "importance" of each word is calculated, where higher importances indicate a larger contribution to the topic.</p>
+      <p>For each combination of Program, Group and Question, the overall most important words from the free responses are plotted below. 
+        Additionally, the three most common topics have been extracted. To view the words associated with a specific topic, select a button.</p>
+      
       <div id="radio4"></div>
       <div style="color: black; text-shadow: none; margin-top: 1rem;" id="topicbarplot"></div>
+
+      <h5 style="padding-top: 1em;">Example</h5>
+      <p>Select "Transition", "Students" and "LGR_Resources" using the buttons above. Upon doing so, the bar plot will be updated with the most "important" words from the free response data. 
+        Next, select the "First" button. Words highlighted in red are associated with the first topic. You can see that the most "important" words associated with the first topic are "college", "essay" and "help". 
+        Therefore, one can infer that the first major topic present within the free responses has to do  with coaches helping with the college essay.</p>
+        
+      <p>Next, click the "Second" button. Now the most important words highlighted in red are "help", "scholarships" and "apply", so one can infer that the second most common topic has to do with coaches helping students find and apply to scholarships. </p>
 
 
       <br><br>
